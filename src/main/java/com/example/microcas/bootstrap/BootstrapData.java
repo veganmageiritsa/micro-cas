@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 import com.datastax.oss.driver.api.core.CqlSession;
 import com.example.microcas.domain.Customer;
 
-//@Profile("dev")
+@Profile("dev")
 @Component
 public class BootstrapData implements CommandLineRunner {
     

@@ -9,7 +9,8 @@ import org.springframework.data.cassandra.repository.CassandraRepository;
 import com.example.microcas.domain.Customer;
 
 public interface CustomerRepository extends CassandraRepository<Customer, UUID> {
-
+    
     @AllowFiltering
     Optional<Customer> findByMobileNumber(String mobileNumber);
+    
 }
